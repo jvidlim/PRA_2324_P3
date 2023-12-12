@@ -34,7 +34,7 @@ template <typename V> class TableEntry{
 		}
 
 		friend ostream&operator<<(ostream &out, const TableEntry<V> &te){
-			out << "C'" << te.key << "' => " << te.value << ")";
+			out << "\t(" << te.key << "' => " << te.value << ")\n";
 			return out;
 		}
 

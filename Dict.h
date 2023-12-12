@@ -6,10 +6,10 @@ using namespace std;
 template <typename V> class Dict{
 
 	public:
-		void insert(string key, V value) = 0;
-		V search(string key) = 0;
-		V remove(string key) = 0;
-		int rentries() = 0;
+		virtual void insert(string key, V value) = 0;
+		virtual V search(string key) = 0;
+		virtual V remove(string key) = 0;
+		virtual int entries() = 0;
 
 };
 
